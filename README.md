@@ -1,11 +1,11 @@
 ##HTML-to-Element
 
 ####What does HTML-to-Element?
-  In one short sentence: "HTML-to-Element converts HTML from string to js dom element."
+  In one short sentence: "HTML-to-Element converts HTML from a string to a js dom element."
 
 ####Install
 ```
-npm install html-to-element -D
+npm install html-to-element -S
 ```
 ####Import
  ```javascript

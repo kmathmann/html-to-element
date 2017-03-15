@@ -10,6 +10,11 @@ export default function htmlToElement(html) {
         return null;
     }
 
+    if (navigator.appName == 'Microsoft Internet Explorer' ||  !!(navigator.userAgent.match(/Trident/) || navigator.userAgent.match(/rv:11/)))
+    {
+        wrapper =  document.createElement('div');
+    }
+
     wrapper.innerHTML = html;
     return wrapper.childElementCount > 1 ? wrapper.children : wrapper.firstElementChild;
 }
